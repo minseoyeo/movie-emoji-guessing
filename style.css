@@ -1,0 +1,159 @@
+body,
+html,
+* {
+  margin: 0;
+  padding: 0;
+  background: #333;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+h1 {
+  font-size: 45px;
+  letter-spacing: 1px;
+  font-family: "Agbalumo", sans-serif;
+  color: #ffd700;
+  text-align: center;
+}
+
+#emojis {
+  border: none;
+  border-radius: 5px;
+  background: #f2f2f2;
+  padding: 0.5rem 1rem;
+  font-size: 2rem;
+  letter-spacing: 5px;
+  margin: 20px;
+}
+
+#hint {
+  letter-spacing: 1px;
+  font-weight: 500;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+}
+
+#userAnswer {
+  width: 80%;
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  border: 2px solid #fff;
+  font-weight: 500;
+  border-radius: 5px;
+  color: #ffd700;
+  text-align: center;
+  outline: none;
+  margin-top: 20px;
+  padding: 10px 0;
+  letter-spacing: 2px;
+}
+
+#userAnswer::placeholder {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+  color: #fff;
+  letter-spacing: 2px;
+}
+
+#feedback {
+  color: #ffd700;
+  font-family: "Poppins", sans-serif;
+  font-size: 25px;
+  letter-spacing: 2px;
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+#correctAnswer {
+  color: #f2f2f2;
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+/* Media Query */
+@media (min-width: 768px) {
+  h1 {
+    font-size: 55px;
+    letter-spacing: 3px;
+  }
+
+  h1 br {
+    display: none;
+  }
+
+  #emojis {
+    font-size: 3rem;
+  }
+
+  #hint {
+    font-size: 22px;
+    padding: 0 5rem;
+  }
+
+  #userAnswer {
+    font-size: 28px;
+    padding: 15px 0;
+  }
+
+  #userAnswer::placeholder {
+    font-size: 28px;
+  }
+
+  #feedback {
+    font-size: 34px;
+  }
+
+  #correctAnswer {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    margin-top: 8rem;
+  }
+
+  h1 {
+    font-size: 75px;
+    letter-spacing: 5px;
+  }
+
+  #emojis {
+    font-size: 4rem;
+    margin: 30px;
+  }
+
+  #hint {
+    font-size: 28px;
+    padding: 0 10rem;
+  }
+
+  #userAnswer {
+    width: 65%;
+    font-size: 35px;
+    margin-top: 25px;
+    padding: 15px 0;
+  }
+
+  #userAnswer::placeholder {
+    font-size: 35px;
+  }
+
+  #feedback {
+    font-size: 45px;
+  }
+
+  #correctAnswer {
+    font-size: 40px;
+  }
+}
